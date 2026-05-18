@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Freiwillige Feuerwehr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <span>Notruf: 112 | Wir sind rund um die Uhr für Sie im Einsatz</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <div class="logo-icon">🚒</div>
+                    <div class="logo-text">
+                        Freiwillige Feuerwehr
+                        <span>Gemeinde Musterstadt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="fahrzeuge.html">Fahrzeuge</a></li>
+                <li><a href="einsatz.html">Einsätze</a></li>
+                <li><a href="jugendfeuerwehr.html">Jugend</a></li>
+                <li><a href="events.html">Termine</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0;">
+        <div class="container">
+            <h1>Kontakt & Spenden</h1>
+            <p>Wir freuen uns auf Ihre Nachricht - ob Anfrage, Mitmachwunsch oder Unterstützung</p>
+        </div>
+    </section>
+
+    <div class="emergency-banner">
+        <div class="container">
+            <h2>🚨 Notruf</h2>
+            <div class="emergency-numbers">
+                <div class="emergency-number">112</div>
+                <div class="emergency-number">Feuerwehr & Rettungsdienst</div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Kontaktformular</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <select id="subject" name="subject">
+                                <option value="">-- Bitte wählen --</option>
+                                <option value="mitglied">Mitgliedschaft</option>
+                                <option value="spende">Spende</option>
+                                <option value="allgemein">Allgemeine Anfrage</option>
+                                <option value="presse">Presseanfrage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Nachricht senden</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Kontaktinformationen</h3>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Anschrift</h4>
+                            <p>Freiwillige Feuerwehr Musterstadt<br>Feuerwehrstraße 1<br>12345 Musterstadt</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Telefon</h4>
+                            <p>01234 / 56789<br>(Mo-Fr 18:00 - 20:00 Uhr)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h4>E-Mail</h4>
+                            <p>info@feuerwehr-musterstadt.de</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h4>Sprechzeiten</h4>
+                            <p>Jeden Freitag 18:00 - 20:00 Uhr<br>im Feuerwehrgerätehaus</p>
+                        </div>
+                    </div>
+
+                    <div class="emergency-contacts">
+                        <h3>Wichtige Nummern</h3>
+                        <div class="emergency-contact-item">
+                            <span>Feuerwehr / Rettungsdienst</span>
+                            <span class="number">112</span>
+                        </div>
+                        <div class="emergency-contact-item">
+                            <span>Polizei</span>
+                            <span class="number">110</span>
+                        </div>
+                        <div class="emergency-contact-item">
+                            <span>Giftnotruf</span>
+                            <span class="number">030 19240</span>
+                        </div>
+                        <div class="emergency-contact-item">
+                            <span>Krankentransport</span>
+                            <span class="number">19222</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donation-section" style="background: linear-gradient(135deg, var(--primary-red), var(--primary-red-dark));">
+                <h3>Spenden Sie für unsere Arbeit</h3>
+                <p>Die Freiwillige Feuerwehr finanziert sich größtenteils durch Spenden und Fördermittel. Jede Unterstützung hilft uns, unsere Ausrüstung zu verbessern und die Ausbildung zu fördern.</p>
+                <div style="background-color: rgba(255,255,255,0.2); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <p style="margin-bottom: 10px;"><strong>Sparkasse Musterstadt</strong></p>
+                    <p style="margin-bottom: 5px;">IBAN: DE12 3456 7890 1234 5678 90</p>
+                    <p>BIC: SPARKDExxxx</p>
+                </div>
+                <a href="#" class="btn btn-donate" style="margin-top: 20px; display: inline-block;">Jetzt spenden</a>
+                <p style="margin-top: 15px; font-size: 14px;">Spenden sind steuerlich absetzbar. Spendenbescheinigung wird auf Wunsch zugesandt.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>So werden Sie Mitglied</h2>
+                <p>Engagement für die Gemeinschaft</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-card-icon">👥</div>
+                    <h3>Aktive Mitglieder</h3>
+                    <p>Ab 18 Jahren können Sie in die Einsatzabteilung eintreten. Regelmäßige Übungen und Einsätze erwarten Sie.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">👦</div>
+                    <h3>Jugendfeuerwehr</h3>
+                    <p>Kinder und Jugendliche von 10 bis 17 Jahren sind in unserer Jugendfeuerwehr willkommen.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">🤝</div>
+                    <h3>Fördermitglieder</h3>
+                    <p>Sie möchten uns unterstützen, aber nicht aktiv dabei sein? Werden Sie Fördermitglied!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Freiwillige Feuerwehr Musterstadt</h4>
+                    <p>Wir sind rund um die Uhr für Sie da. Bei Notfällen wählen Sie bitte immer den Notruf 112.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="fahrzeuge.html">Fahrzeuge</a></li>
+                        <li><a href="einsatz.html">Einsatzarchiv</a></li>
+                        <li><a href="jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
+                        <li><a href="events.html">Termine</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Feuerwehrstraße 1<br>12345 Musterstadt</p>
+                    <p>Tel: 01234 / 56789<br>Email: info@feuerwehr-musterstadt.de</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Notruf</h4>
+                    <p style="font-size: 24px; font-weight: bold; color: var(--primary-red);">112</p>
+                    <p>Feuerwehr und Rettungsdienst</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Freiwillige Feuerwehr Musterstadt. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
