@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="55" fill="#cc0000"/>
+  <circle cx="60" cy="60" r="48" fill="#1a1a1a"/>
+  
+  <!-- Inner Ring -->
+  <circle cx="60" cy="60" r="42" fill="none" stroke="#cc0000" stroke-width="2"/>
+  
+  <!-- Flame -->
+  <path d="M60 20 
+           C45 35 45 50 55 60 
+           C50 55 48 48 52 42 
+           C50 50 52 58 60 65 
+           C68 58 70 50 68 42 
+           C72 48 70 55 65 60 
+           C75 50 75 35 60 20" 
+        fill="#ff6600"/>
+  
+  <!-- Flame Highlight -->
+  <path d="M60 25 
+           C52 35 52 45 58 52 
+           C55 48 54 44 56 40 
+           C55 46 56 52 60 56 
+           C64 52 65 46 64 40 
+           C66 44 65 48 62 52 
+           C68 45 68 35 60 25" 
+        fill="#ffcc00"/>
+  
+  <!-- Helmet Top -->
+  <ellipse cx="60" cy="78" rx="20" ry="8" fill="#cc0000"/>
+  <path d="M40 78 Q60 90 80 78 L80 82 Q60 95 40 82 Z" fill="#cc0000"/>
+  
+  <!-- Helmet Brim -->
+  <path d="M35 82 Q60 95 85 82" fill="none" stroke="#cc0000" stroke-width="4"/>
+</svg>
