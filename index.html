@@ -51,7 +51,13 @@
     </nav>
 
     <section class="hero">
-        <div class="container">
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1920')"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920')"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1920')"></div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920')"></div>
+        </div>
+        <div class="hero-content">
             <h1>Freiwillige Feuerwehr Musterstadt</h1>
             <p>Seit über 120 Jahren schützen wir unsere Gemeinde. Tradition verpflichtet – Kompetenz vertrauen.</p>
             <a href="kontakt.html" class="btn">Mitmachen</a>
@@ -295,6 +301,21 @@
                 });
             });
         }
+    </script>
+    <script>
+        // Hero Slideshow
+        (function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+            
+            if (slides.length > 1) {
+                setInterval(function() {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 5000); // Alle 5 Sekunden wechseln
+            }
+        })();
     </script>
 </body>
 </html>
