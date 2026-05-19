@@ -123,7 +123,7 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1516233672786-4d4b33e1d5e4?w=1200') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=1200') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--white);
