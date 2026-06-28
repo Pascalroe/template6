@@ -68,6 +68,11 @@
 
     <section>
         <div class="container">
+            <div class="einsatz-filter">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="einsatz">Eins&auml;tze</button>
+                <button class="filter-btn" data-filter="uebung">&Uuml;bungen</button>
+            </div>
             <div class="mission-list">
                 <div class="mission-item">
                     <div class="mission-date">
@@ -76,7 +81,7 @@
                     </div>
                     <div class="mission-content">
                         <h3>Brandmeldealarm Gewerbegebiet</h3>
-                        <p>Alarmierung durch Brandmeldeanlage im Industriegebiet. Nach Überprüfung vor Ort konnte Entwarnung gegeben werden - Fehlalarm.</p>
+                        <p>Alarmierung durch Brandmeldeanlage im Industriegebiet. Nach Uberprufung vor Ort konnte Entwarnung gegeben werden - Fehlalarm.</p>
                     </div>
                     <span class="mission-type einsatz">Einsatz</span>
                 </div>
@@ -211,6 +216,7 @@
                         <li><a href="jugendfeuerwehr.html">Jugendfeuerwehr</a></li>
                         <li><a href="events.html">Termine</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -222,6 +228,14 @@
                     <h4>Notruf</h4>
                     <p style="font-size: 24px; font-weight: bold; color: var(--primary-red);">112</p>
                     <p>Feuerwehr und Rettungsdienst</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h4>Folgen Sie uns</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">📸</a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">▶️</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -248,6 +262,22 @@
                 });
             });
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            var fb=document.querySelectorAll('.filter-btn');
+            var mi=document.querySelectorAll('.mission-item');
+            fb.forEach(function(b){b.addEventListener('click',function(){
+                fb.forEach(function(x){x.classList.remove('active')});
+                this.classList.add('active');
+                var f=this.getAttribute('data-filter');
+                mi.forEach(function(item){
+                    if(f==='all'){item.style.display='grid';}
+                    else{var t=item.querySelector('.mission-type');
+                    item.style.display=t&&t.classList.contains(f)?'grid':'none';}
+                });
+            });});
+        });
     </script>
 </body>
 </html>

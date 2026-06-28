@@ -972,6 +972,122 @@ section {
   opacity: 0.8;
 }
 
+
+/* Einsatz-Filter */
+.einsatz-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  background-color: var(--white);
+  color: var(--text-dark);
+  border: 2px solid var(--beige-dark);
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-red);
+  color: var(--primary-red);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-red);
+  color: var(--white);
+  border-color: var(--primary-red);
+}
+
+/* Map Container */
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+/* Social Links in Footer */
+.footer-social {
+  text-align: center;
+  padding: 30px 0 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-social h4 {
+  color: var(--primary-red);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: var(--primary-red);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(204, 0, 0, 0.3);
+}
+
+/* Legal Pages (Impressum/Datenschutz) */
+.legal-text {
+  line-height: 1.8;
+}
+
+.legal-text h3 {
+  color: var(--primary-red);
+  margin-bottom: 15px;
+}
+
+.legal-text p {
+  color: var(--text-gray);
+  margin-bottom: 15px;
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 40px;
+  color: var(--text-gray);
+  font-size: 18px;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .einsatz-filter {
+    gap: 8px;
+  }
+  .filter-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
 /* Footer */
 footer {
   background-color: #1a1a1a;
